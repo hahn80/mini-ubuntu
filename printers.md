@@ -1,0 +1,6 @@
+1. Gordon-Palmer-6555-6565-UFR-II: IP: http://10.116.26.45:631
+2. MSB-3019-4545-4551-UFR-II-2 -> IP: http://10.116.117.50:631
+3. MSB-3019-ColorLaserJet-M255-M256 -> IP: http://10.116.117.24:631
+4. 
+
+

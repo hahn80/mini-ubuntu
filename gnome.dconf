@@ -1,0 +1,149 @@
+[apps/light-locker]
+idle-hint=false
+late-locking=false
+lock-after-screensaver=uint32 5
+lock-on-lid=false
+lock-on-suspend=true
+
+[desktop/ibus/general]
+engines-order=['xkb:us::eng', 'Bamboo::Us']
+preload-engines=['xkb:us::eng', 'Bamboo::Us']
+version='1.5.22'
+
+
+[org/gnome/calendar]
+active-view='week'
+window-maximized=true
+window-position=(0, 40)
+window-size=(1920, 1000)
+
+[org/gnome/desktop/calendar]
+show-weekdate=true
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
+sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+clock-format='12h'
+clock-show-seconds=false
+clock-show-weekday=true
+cursor-theme='Yaru'
+document-font-name='Sans 16'
+enable-animations=false
+font-name='Sans 16'
+gtk-im-module='ibus'
+monospace-font-name='Monospace 16'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/touchpad]
+click-method='areas'
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+remember-app-usage=false
+report-technical-problems=true
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=false
+event-sounds=true
+theme-name='freedesktop'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='close,minimize,maximize:'
+titlebar-font='Sans Bold 16'
+
+[org/gnome/gnome-screenshot]
+border-effect='none'
+delay=0
+include-border=true
+include-pointer=false
+last-save-directory='file:///home/hanh/Pictures'
+
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='large'
+text-ellipsis-limit=['1']
+
+[org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='icon-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1591, 701)
+maximized=false
+sidebar-width=358
+start-with-sidebar=true
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
+night-light-schedule-automatic=false
+night-light-schedule-from=6.0
+night-light-schedule-to=23.0
+night-light-temperature=uint32 4230
+
+[org/gnome/settings-daemon/plugins/media-keys]
+home=['<Super>e']
+terminal=['<Super>t']
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='rgba'
+hinting='none'
+
+[org/gnome/shell/extensions/dash-to-dock]
+animate-show-apps=false
+apply-custom-theme=false
+background-opacity=0.10000000000000001
+custom-theme-shrink=true
+dash-max-icon-size=64
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+preferred-monitor=0
+show-favorites=true
+transparency-mode='FIXED'
+unity-backlit-items=true
+
+[org/gnome/shell/extensions/desktop-icons]
+show-home=false
+show-trash=false
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/terminal/legacy]
+theme-variant='dark'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,43,54)'
+background-transparency-percent=39
+font='Hack Nerd Font 20'
+foreground-color='rgb(131,148,150)'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true
+use-transparent-background=false
+visible-name='DarkConsole'

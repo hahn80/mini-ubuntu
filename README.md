@@ -12,4 +12,6 @@ We need to connect to wifi during the installation to save the wifi connection s
 
 ## Install addition packages
 
-Check out the packages.md file to see the content.
+- Check out the packages.md file to see the content.
+- Abricotine for md editor
+- Add WPS hosts to etc/hosts

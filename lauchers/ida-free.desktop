@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=IDA Free 8.3
+Comment=IDA Disasssembler
+Icon=/opt/ida/ida.png
+Exec=/opt/ida/ida64
+Terminal=false
+Categories=Development
