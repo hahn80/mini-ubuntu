@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 JOB_ALIAS SOURCE_FOLDER TARGET_FOLDER"
+    exit 1
+fi
+
+# Variables
+JOB_NAME="job-new"
+JOB_ALIAS="$1"
+SOURCE_FOLDER="$2"
+TARGET_FOLDER="$3"
+DIRECTION="ltor"
+SAVE_PREV_VERSION="no"
+SAVE_PAST_VERSIONS="no"
+
+# Check if SOURCE_FOLDER exists
+if [ ! -d "$SOURCE_FOLDER" ]; then
+    echo "Error: Source folder '$SOURCE_FOLDER' does not exist."
+    exit 1
+fi
+
+# Check if TARGET_FOLDER exists
+if [ ! -d "$TARGET_FOLDER" ]; then
+    echo "Error: Target folder '$TARGET_FOLDER' does not exist."
+    exit 1
+fi
+
+# Create the gsync job
+gsync $JOB_NAME $JOB_ALIAS /f1=$SOURCE_FOLDER /f2=$TARGET_FOLDER /dir=$DIRECTION /save-prev-version=$SAVE_PREV_VERSION /save-past-versions=$SAVE_PAST_VERSIONS
+
+# Check if the job creation was successful
+if [ $? -eq 255 ]; then
+    echo "Job $JOB_ALIAS created successfully."
+else
+    echo "Failed to create job $JOB_ALIAS."
+fi
+
