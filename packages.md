@@ -27,3 +27,8 @@ sudo apt install gnome-screenshot gnome-sound-recorder ubuntu-restricted-extras 
 **Notice:** If the login screen missing the cursor icon, it means that you are missing `adwaita-icon-theme-full`.
 
 
+## Canberra GTK Libs
+
+```
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+```
