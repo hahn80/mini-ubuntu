@@ -9,7 +9,7 @@
 3. Install variants:
 	`sudo ./install.sh -d /usr/share/themes -t orange -t yellow -i ubuntu`
 
-4. Install icon theme:
+4. Install icon theme: (https://github.com/vinceliuice/WhiteSur-icon-theme)
 	`sudo ./install.sh -d /usr/share/icons -t nord orange yellow`
 
 
