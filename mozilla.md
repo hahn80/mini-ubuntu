@@ -16,6 +16,7 @@
 | **prefs.js** (and **user.js** if you have it) | Small | All custom settings/preferences (homepage, privacy, UI tweaks, many extension settings) | Main file for personalization. |
 | **extensions** folder (or **extensions.json**) | Small-Medium | Installed extensions/add-ons (the .xpi files or references)                      | You'll reinstall extensions if missing, but this preserves them. Extension data often in storage (skip for size). |
 | **bookmarkbackups** folder   | Small      | Automatic bookmark backups (JSON files)                                          | Redundant if you have places.sqlite, but useful fallback. |
+| **cookies.sqlite**           | Small-Medium | Cookies, including session/persistent cookies for staying logged in to websites (often bypasses repeated 2FA) | Great for keeping active sessions after restore. Usually small but very useful. |
 | **search.json.mozlz4**       | Small      | Custom search engines                                                            | Optional but nice. |
 | **containers.json**          | Small      | Multi-Account Containers data (if you use it)                                    | Optional. |
 | **cert9.db** (and **cert_override.txt** if present) | Small | Custom security certificates/exceptions                                          | If you have site exceptions. |
